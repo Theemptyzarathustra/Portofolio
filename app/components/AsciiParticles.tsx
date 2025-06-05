@@ -36,6 +36,7 @@ export default function AsciiParticles() {
     let animationFrame: number;
     let t = 0;
     function draw() {
+      if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
       ctx.font = `${FONT_SIZE}px monospace`;
       ctx.fillStyle = "#3B82F6";
@@ -64,6 +65,7 @@ export default function AsciiParticles() {
 
     // Resize handler
     function handleResize() {
+      if (!canvas) return;
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
       cols = Math.floor(width / FONT_SIZE);
