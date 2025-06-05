@@ -37,6 +37,13 @@ npm run dev
 - `postcss.config.js` - PostCSS configuration
 - `tsconfig.json` - TypeScript configuration
 
+### Run the Production Server
+
+```bash
+npm run build
+npm start
+```
+
 ## Customization
 
 1. Update the content in `app/page.tsx` to match your information
