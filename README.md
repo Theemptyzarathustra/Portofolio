@@ -51,3 +51,4 @@ npm run dev
 - Tailwind CSS
 - Framer Motion
 - Heroicons 
+
